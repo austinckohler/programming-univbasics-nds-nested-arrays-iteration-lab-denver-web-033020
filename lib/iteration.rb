@@ -75,19 +75,12 @@ while row_index < src.length do
     new_array = []
     row_index = 0 
     
-    while row_index < src.count do 
-      element_index = 0 
-      inner_array = []
-      while element_index < src[row_index].count do
-        if src[row_index][element_index] > 0 
-          inner_array.push (src[row_index][element_index])
-          element_index += 1 
-        end
-        new_array.push inner_array
-      end
-        row_index +=1 
-      end
-    end
+   
+  while row_index < src.count do 
+     new_array << (src[row_index].max)
+     row_index += 1 
+   end
+   new_array
       
     
 
