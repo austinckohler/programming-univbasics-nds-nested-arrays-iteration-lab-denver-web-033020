@@ -80,7 +80,7 @@ while row_index < src.length do
       inner_array = []
       while element_index < src[row_index].count do
         if src[row_index][element_index] > 0 
-          inner_array.push src[row_index][element_index]
+          inner_array.push (src[row_index][element_index])
           element_index += 1 
         end
         new_array.push inner_array
